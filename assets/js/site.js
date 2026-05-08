@@ -9,6 +9,17 @@
     root.dataset.theme = "light";
   }
 
+  const favicon = document.querySelector("#theme-favicon");
+  const browserScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  const syncFavicon = () => {
+    if (!favicon) return;
+    const icon = browserScheme.matches ? "favicon-dark-32.png" : "favicon-light-32.png";
+    favicon.setAttribute("href", `assets/img/${icon}?v=2`);
+  };
+
+  syncFavicon();
+  browserScheme.addEventListener("change", syncFavicon);
+
   const toggle = document.querySelector("[data-theme-toggle]");
   const syncThemeToggle = () => {
     if (!toggle) return;
