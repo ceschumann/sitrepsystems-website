@@ -2,66 +2,388 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>SitRep Systems | Application Development & Business Intelligence</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SitRep Systems | Federal Power Platform Architecture</title>
+  <meta name="description" content="SitRep Systems helps federal primes design, build, and transition governed Power Platform solutions for mission teams in GCC and GCC High environments.">
+  <meta name="theme-color" content="#071421">
+  <meta property="og:title" content="SitRep Systems | Federal Power Platform Architecture">
+  <meta property="og:description" content="Governed Power Platform delivery for federal primes, mission teams, and compliance-heavy Microsoft 365 environments.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitrepsystems.com/">
+  <meta property="og:image" content="https://www.sitrepsystems.com/assets/img/sitrep-logo-dark-large.png">
+  <link rel="canonical" href="https://www.sitrepsystems.com/">
+  <link id="theme-favicon" rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-light-32.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "SitRep Systems",
+      "url": "https://www.sitrepsystems.com/",
+      "email": "info@sitrepsystems.com",
+      "areaServed": "United States",
+      "description": "Federal Power Platform architecture, modernization, and governed delivery support.",
+      "serviceType": [
+        "Power Platform solution architecture",
+        "Federal workflow modernization",
+        "Human-centered design",
+        "Power BI reporting",
+        "Power Automate implementation"
+      ]
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <img src="sitrep-logo.svg" alt="SitRep Systems Logo" class="logo" />
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+  <!--
+    Thanks for checking under the hood.
+    SitRep Systems builds for the people who use the system, audit the system, and inherit the system.
+  -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="index.html" aria-label="SitRep Systems home">
+        <img class="brand-logo brand-logo-light" src="assets/img/sitrep-logo-light-small.png" srcset="assets/img/sitrep-logo-light-small.png 480w, assets/img/sitrep-logo-light-medium.png 960w, assets/img/sitrep-logo-light-large.png 1600w" sizes="214px" alt="SitRep Systems">
+        <img class="brand-logo brand-logo-dark" src="assets/img/sitrep-logo-dark-small.png" srcset="assets/img/sitrep-logo-dark-small.png 480w, assets/img/sitrep-logo-dark-medium.png 960w, assets/img/sitrep-logo-dark-large.png 1600w" sizes="214px" alt="SitRep Systems">
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#federal-ready">Federal-Ready</a>
+        <a href="#approach">Approach</a>
+        <a href="#work">Work</a>
+        <a href="capability-statement.html">Capability Statement</a>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false" data-theme-toggle>
+        <span aria-hidden="true"></span>
+      </button>
     </div>
   </header>
 
-  <!-- Banner Image Below Header -->
-  <div style="text-align: center; margin: 20px 0;">
-    <img src="SitRepSystems_Banner.png" alt="SitRep Systems Banner" style="width: 25%; height: auto;" />
-  </div>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Actionable Solutions. <span>Modern Apps.</span></h1>
-        <p>Custom Power Apps & Business Intelligence built for your unique business challenges.</p>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-orbit" aria-hidden="true">
+        <svg class="hero-network" viewBox="0 0 820 520" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="6" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <line class="hero-link" data-a="0" data-b="1" x1="120" y1="420" x2="460" y2="90" />
+          <line class="hero-link" data-a="1" data-b="2" x1="460" y1="90" x2="700" y2="260" />
+          <line class="hero-link" data-a="2" data-b="3" x1="700" y1="260" x2="620" y2="430" />
+          <line class="hero-link" data-a="3" data-b="0" x1="620" y1="430" x2="120" y2="420" />
+          <line class="hero-link" data-a="0" data-b="4" x1="120" y1="420" x2="320" y2="260" />
+          <line class="hero-link" data-a="4" data-b="1" x1="320" y1="260" x2="460" y2="90" />
+          <line class="hero-link" data-a="4" data-b="5" x1="320" y1="260" x2="500" y2="360" />
+          <line class="hero-link" data-a="5" data-b="3" x1="500" y1="360" x2="620" y2="430" />
+          <line class="hero-link" data-a="6" data-b="0" x1="200" y1="300" x2="120" y2="420" />
+          <line class="hero-link" data-a="6" data-b="4" x1="200" y1="300" x2="320" y2="260" />
+          <line class="hero-link" data-a="7" data-b="1" x1="400" y1="200" x2="460" y2="90" />
+          <line class="hero-link" data-a="7" data-b="4" x1="400" y1="200" x2="320" y2="260" />
+          <line class="hero-link" data-a="8" data-b="1" x1="600" y1="150" x2="460" y2="90" />
+          <line class="hero-link" data-a="8" data-b="2" x1="600" y1="150" x2="700" y2="260" />
+          <line class="hero-link" data-a="9" data-b="2" x1="750" y1="350" x2="700" y2="260" />
+          <line class="hero-link" data-a="9" data-b="3" x1="750" y1="350" x2="620" y2="430" />
+          <line class="hero-link" data-a="10" data-b="0" x1="100" y1="350" x2="120" y2="420" />
+          <line class="hero-link" data-a="10" data-b="6" x1="100" y1="350" x2="200" y2="300" />
+          <line class="hero-link" data-a="11" data-b="5" x1="550" y1="400" x2="500" y2="360" />
+          <line class="hero-link" data-a="11" data-b="3" x1="550" y1="400" x2="620" y2="430" />
+          <line class="hero-link" data-a="12" data-b="1" x1="350" y1="100" x2="460" y2="90" />
+          <line class="hero-link" data-a="12" data-b="4" x1="350" y1="100" x2="320" y2="260" />
+          <line class="hero-link" data-a="13" data-b="2" x1="650" y1="100" x2="700" y2="260" />
+          <line class="hero-link" data-a="13" data-b="8" x1="650" y1="100" x2="600" y2="150" />
+          <line class="hero-link" data-a="14" data-b="3" x1="450" y1="450" x2="620" y2="430" />
+          <line class="hero-link" data-a="14" data-b="5" x1="450" y1="450" x2="500" y2="360" />
+          <line class="hero-link" data-a="15" data-b="4" x1="250" y1="150" x2="320" y2="260" />
+          <line class="hero-link" data-a="15" data-b="12" x1="250" y1="150" x2="350" y2="100" />
+          <line class="hero-link" data-a="16" data-b="0" x1="150" y1="200" x2="120" y2="420" />
+          <line class="hero-link" data-a="16" data-b="6" x1="150" y1="200" x2="200" y2="300" />
+          <line class="hero-link" data-a="17" data-b="3" x1="700" y1="450" x2="620" y2="430" />
+          <line class="hero-link" data-a="17" data-b="9" x1="700" y1="450" x2="750" y2="350" />
+          <line class="hero-link" data-a="18" data-b="0" x1="50" y1="250" x2="120" y2="420" />
+          <line class="hero-link" data-a="18" data-b="10" x1="50" y1="250" x2="100" y2="350" />
+          <line class="hero-link" data-a="19" data-b="2" x1="800" y1="200" x2="700" y2="260" />
+          <line class="hero-link" data-a="19" data-b="9" x1="800" y1="200" x2="750" y2="350" />
+          <line class="hero-link" data-a="20" data-b="16" x1="90" y1="145" x2="150" y2="200" />
+          <line class="hero-link" data-a="20" data-b="18" x1="90" y1="145" x2="50" y2="250" />
+          <line class="hero-link" data-a="21" data-b="15" x1="205" y1="85" x2="250" y2="150" />
+          <line class="hero-link" data-a="21" data-b="12" x1="205" y1="85" x2="350" y2="100" />
+          <line class="hero-link" data-a="22" data-b="12" x1="310" y1="35" x2="350" y2="100" />
+          <line class="hero-link" data-a="22" data-b="1" x1="310" y1="35" x2="460" y2="90" />
+          <line class="hero-link" data-a="23" data-b="1" x1="520" y1="40" x2="460" y2="90" />
+          <line class="hero-link" data-a="23" data-b="13" x1="520" y1="40" x2="650" y2="100" />
+          <line class="hero-link" data-a="24" data-b="13" x1="735" y1="70" x2="650" y2="100" />
+          <line class="hero-link" data-a="24" data-b="19" x1="735" y1="70" x2="800" y2="200" />
+          <line class="hero-link" data-a="25" data-b="18" x1="35" y1="120" x2="50" y2="250" />
+          <line class="hero-link" data-a="25" data-b="20" x1="35" y1="120" x2="90" y2="145" />
+          <line class="hero-link" data-a="26" data-b="16" x1="250" y1="215" x2="150" y2="200" />
+          <line class="hero-link" data-a="26" data-b="4" x1="250" y1="215" x2="320" y2="260" />
+          <line class="hero-link" data-a="27" data-b="7" x1="455" y1="240" x2="400" y2="200" />
+          <line class="hero-link" data-a="27" data-b="5" x1="455" y1="240" x2="500" y2="360" />
+          <line class="hero-link" data-a="28" data-b="8" x1="555" y1="230" x2="600" y2="150" />
+          <line class="hero-link" data-a="28" data-b="2" x1="555" y1="230" x2="700" y2="260" />
+          <line class="hero-link" data-a="29" data-b="19" x1="785" y1="120" x2="800" y2="200" />
+          <line class="hero-link" data-a="29" data-b="24" x1="785" y1="120" x2="735" y2="70" />
+          <line class="hero-link" data-a="30" data-b="10" x1="55" y1="455" x2="100" y2="350" />
+          <line class="hero-link" data-a="30" data-b="0" x1="55" y1="455" x2="120" y2="420" />
+          <line class="hero-link" data-a="31" data-b="0" x1="215" y1="475" x2="120" y2="420" />
+          <line class="hero-link" data-a="31" data-b="14" x1="215" y1="475" x2="450" y2="450" />
+          <line class="hero-link" data-a="32" data-b="14" x1="345" y1="505" x2="450" y2="450" />
+          <line class="hero-link" data-a="32" data-b="5" x1="345" y1="505" x2="500" y2="360" />
+          <line class="hero-link" data-a="33" data-b="14" x1="515" y1="500" x2="450" y2="450" />
+          <line class="hero-link" data-a="33" data-b="17" x1="515" y1="500" x2="700" y2="450" />
+          <line class="hero-link" data-a="34" data-b="17" x1="785" y1="495" x2="700" y2="450" />
+          <line class="hero-link" data-a="34" data-b="9" x1="785" y1="495" x2="750" y2="350" />
+          <line class="hero-link" data-a="35" data-b="6" x1="145" y1="285" x2="200" y2="300" />
+          <line class="hero-link" data-a="35" data-b="10" x1="145" y1="285" x2="100" y2="350" />
+          <line class="hero-link" data-a="36" data-b="4" x1="365" y1="320" x2="320" y2="260" />
+          <line class="hero-link" data-a="36" data-b="5" x1="365" y1="320" x2="500" y2="360" />
+          <line class="hero-link" data-a="37" data-b="11" x1="590" y1="335" x2="550" y2="400" />
+          <line class="hero-link" data-a="37" data-b="2" x1="590" y1="335" x2="700" y2="260" />
+          <line class="hero-link" data-a="38" data-b="9" x1="740" y1="415" x2="750" y2="350" />
+          <line class="hero-link" data-a="38" data-b="17" x1="740" y1="415" x2="700" y2="450" />
+          <line class="hero-link" data-a="39" data-b="7" x1="430" y1="145" x2="400" y2="200" />
+          <line class="hero-link" data-a="39" data-b="1" x1="430" y1="145" x2="460" y2="90" />
+          <circle class="hero-node" data-base-x="120" data-base-y="420" cx="120" cy="420" r="2.5" />
+          <circle class="hero-node" data-base-x="460" data-base-y="90" cx="460" cy="90" r="2.5" />
+          <circle class="hero-node" data-base-x="700" data-base-y="260" cx="700" cy="260" r="2.5" />
+          <circle class="hero-node" data-base-x="620" data-base-y="430" cx="620" cy="430" r="2.5" />
+          <circle class="hero-node" data-base-x="320" data-base-y="260" cx="320" cy="260" r="2.5" />
+          <circle class="hero-node" data-base-x="500" data-base-y="360" cx="500" cy="360" r="2.5" />
+          <circle class="hero-node" data-base-x="200" data-base-y="300" cx="200" cy="300" r="2.5" />
+          <circle class="hero-node" data-base-x="400" data-base-y="200" cx="400" cy="200" r="2.5" />
+          <circle class="hero-node" data-base-x="600" data-base-y="150" cx="600" cy="150" r="2.5" />
+          <circle class="hero-node" data-base-x="750" data-base-y="350" cx="750" cy="350" r="2.5" />
+          <circle class="hero-node" data-base-x="100" data-base-y="350" cx="100" cy="350" r="2.5" />
+          <circle class="hero-node" data-base-x="550" data-base-y="400" cx="550" cy="400" r="2.5" />
+          <circle class="hero-node" data-base-x="350" data-base-y="100" cx="350" cy="100" r="2.5" />
+          <circle class="hero-node" data-base-x="650" data-base-y="100" cx="650" cy="100" r="2.5" />
+          <circle class="hero-node" data-base-x="450" data-base-y="450" cx="450" cy="450" r="2.5" />
+          <circle class="hero-node" data-base-x="250" data-base-y="150" cx="250" cy="150" r="2.5" />
+          <circle class="hero-node" data-base-x="150" data-base-y="200" cx="150" cy="200" r="2.5" />
+          <circle class="hero-node" data-base-x="700" data-base-y="450" cx="700" cy="450" r="2.5" />
+          <circle class="hero-node" data-base-x="50" data-base-y="250" cx="50" cy="250" r="2.5" />
+          <circle class="hero-node" data-base-x="800" data-base-y="200" cx="800" cy="200" r="2.5" />
+          <circle class="hero-node" data-base-x="90" data-base-y="145" cx="90" cy="145" r="2.5" />
+          <circle class="hero-node" data-base-x="205" data-base-y="85" cx="205" cy="85" r="2.5" />
+          <circle class="hero-node" data-base-x="310" data-base-y="35" cx="310" cy="35" r="2.5" />
+          <circle class="hero-node" data-base-x="520" data-base-y="40" cx="520" cy="40" r="2.5" />
+          <circle class="hero-node" data-base-x="735" data-base-y="70" cx="735" cy="70" r="2.5" />
+          <circle class="hero-node" data-base-x="35" data-base-y="120" cx="35" cy="120" r="2.5" />
+          <circle class="hero-node" data-base-x="250" data-base-y="215" cx="250" cy="215" r="2.5" />
+          <circle class="hero-node" data-base-x="455" data-base-y="240" cx="455" cy="240" r="2.5" />
+          <circle class="hero-node" data-base-x="555" data-base-y="230" cx="555" cy="230" r="2.5" />
+          <circle class="hero-node" data-base-x="785" data-base-y="120" cx="785" cy="120" r="2.5" />
+          <circle class="hero-node" data-base-x="55" data-base-y="455" cx="55" cy="455" r="2.5" />
+          <circle class="hero-node" data-base-x="215" data-base-y="475" cx="215" cy="475" r="2.5" />
+          <circle class="hero-node" data-base-x="345" data-base-y="505" cx="345" cy="505" r="2.5" />
+          <circle class="hero-node" data-base-x="515" data-base-y="500" cx="515" cy="500" r="2.5" />
+          <circle class="hero-node" data-base-x="785" data-base-y="495" cx="785" cy="495" r="2.5" />
+          <circle class="hero-node" data-base-x="145" data-base-y="285" cx="145" cy="285" r="2.5" />
+          <circle class="hero-node" data-base-x="365" data-base-y="320" cx="365" cy="320" r="2.5" />
+          <circle class="hero-node" data-base-x="590" data-base-y="335" cx="590" cy="335" r="2.5" />
+          <circle class="hero-node" data-base-x="740" data-base-y="415" cx="740" cy="415" r="2.5" />
+          <circle class="hero-node" data-base-x="430" data-base-y="145" cx="430" cy="145" r="2.5" />
+        </svg>
+      </div>
+      <div class="shell hero-grid hero-grid-simple">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">SDVOSB Power Platform architecture</p>
+          <h1 id="hero-title">Federal delivery intelligence for Microsoft Power Platform teams.</h1>
+          <p class="hero-lede">SitRep Systems helps primes and mission teams turn complex workflows into governed Power Apps, Dataverse models, automations, dashboards, and transition-ready operating patterns.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Start a Conversation</a>
+            <a class="button secondary" href="capability-statement.html">View Capability Statement</a>
+          </div>
+          <div class="trust-strip" aria-label="Federal readiness highlights">
+            <span>GCC and GCC High</span>
+            <span>508-aware UI</span>
+            <span>ATO-aware delivery</span>
+            <span>SAFe and Agile</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="about container">
-      <h2>Who We Are</h2>
-      <p>
-        SitRep Systems designs and develops low-code applications on the Microsoft Power Platform, delivering actionable business intelligence and workflow automation tailored to your needs.
-      </p>
+    <section id="capabilities" class="section shell" aria-labelledby="capabilities-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="capabilities-title">Built for the work behind federal modernization.</h2>
+        <p>Three focused lanes that match how capture teams, delivery teams, and government PMs actually evaluate support.</p>
+      </div>
+      <div class="capability-grid">
+        <article class="capability-card reveal" tabindex="0">
+          <span class="card-index">01</span>
+          <h3>Power Platform Solution Architecture</h3>
+          <p>Architecture for Power Apps, Power Automate, Dataverse, Power BI, Teams, and Microsoft 365 data sources.</p>
+          <div class="card-depth">
+            <strong>Useful when:</strong>
+            <span>Replacing spreadsheets, SharePoint sprawl, manual status trackers, and brittle handoffs.</span>
+          </div>
+        </article>
+        <article class="capability-card reveal" tabindex="0">
+          <span class="card-index">02</span>
+          <h3>Federal Human-Centered Delivery</h3>
+          <p>Discovery, journey mapping, backlog shaping, and iterative delivery for users who work inside real policy constraints.</p>
+          <div class="card-depth">
+            <strong>Useful when:</strong>
+            <span>The workflow must be usable, 508-aware, demo-ready, and credible with government stakeholders.</span>
+          </div>
+        </article>
+        <article class="capability-card reveal" tabindex="0">
+          <span class="card-index">03</span>
+          <h3>Governed Modernization and AI</h3>
+          <p>Modern delivery patterns that respect GCC, GCC High, FedRAMP boundaries, and agency-approved AI tooling.</p>
+          <div class="card-depth">
+            <strong>Useful when:</strong>
+            <span>A team needs Copilot Studio or AI-augmented workflows without stepping outside approved guardrails.</span>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="services" class="services container">
-      <h2>What We Do</h2>
-      <ul>
-        <li>Power Apps Development for Custom Business Solutions</li>
-        <li>Data Integration & Dashboard Reporting</li>
-        <li>Process Automation & Digital Transformation</li>
-        <li>Intuitive User Experiences for Real Results</li>
-      </ul>
+    <section id="federal-ready" class="section federal-band" aria-labelledby="federal-title">
+      <div class="shell federal-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Federal-Ready</p>
+          <h2 id="federal-title">Credible in capture. Practical in delivery.</h2>
+          <p>Experience with federal planning environments, compliance-heavy delivery, and Microsoft cloud boundaries gives primes a sharper partner for Power Platform work.</p>
+        </div>
+        <div class="federal-data reveal">
+          <div><span>Environment</span><strong>GCC / GCC High</strong></div>
+          <div><span>Delivery</span><strong>SAFe / Agile</strong></div>
+          <div><span>Accessibility</span><strong>Section 508 aware</strong></div>
+          <div><span>Governance</span><strong>ATO-aware build patterns</strong></div>
+          <div><span>UEI</span><strong>WBTEMR2DWUE4</strong></div>
+          <div><span>CAGE</span><strong>141M2</strong></div>
+          <div><span>NAICS</span><strong>541511 / 541519 / 541611</strong></div>
+          <div><span>Certification</span><strong>Veteran-Owned / SDVOSB</strong></div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact container">
-      <h2>Contact</h2>
-      <p>
-        For inquiries, please email <a href="mailto:info@sitrepsystems.com" target="_blank">info@sitrepsystems.com</a>
-      </p>
+    <section id="approach" class="section shell" aria-labelledby="approach-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Approach</p>
+        <h2 id="approach-title">A delivery path that survives handoff.</h2>
+      </div>
+      <div class="timeline" data-stepper>
+        <button class="step is-active" type="button" data-step="0" aria-pressed="true">
+          <span>Discover</span>
+          <small>Map users, pain points, data, constraints, and mission outcomes.</small>
+        </button>
+        <button class="step" type="button" data-step="1" aria-pressed="false">
+          <span>Design</span>
+          <small>Shape journeys, screens, roles, security, and reporting needs.</small>
+        </button>
+        <button class="step" type="button" data-step="2" aria-pressed="false">
+          <span>Build</span>
+          <small>Deliver Power Apps, Dataverse, automations, and dashboards in increments.</small>
+        </button>
+        <button class="step" type="button" data-step="3" aria-pressed="false">
+          <span>Govern</span>
+          <small>Align with ATO, 508, environment strategy, and maintainable patterns.</small>
+        </button>
+        <button class="step" type="button" data-step="4" aria-pressed="false">
+          <span>Transition</span>
+          <small>Document, train, and hand off cleanly to government or prime teams.</small>
+        </button>
+      </div>
+    </section>
+
+    <section id="work" class="section shell" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2 id="work-title">Representative federal modernization patterns.</h2>
+      </div>
+      <div class="work-grid">
+        <article class="work-card reveal">
+          <p class="work-type">Intake modernization</p>
+          <h3>From spreadsheet queue to governed workflow</h3>
+          <p>Modeled request intake, status, ownership, and reporting in Dataverse with a Power Apps front end and Power Automate notifications.</p>
+          <span>Power Apps / Dataverse / Power Automate</span>
+        </article>
+        <article class="work-card reveal">
+          <p class="work-type">Executive reporting</p>
+          <h3>Cleaner briefing visibility from scattered sources</h3>
+          <p>Reframed recurring status reporting into a governed data model and Power BI view that reduced manual reconciliation.</p>
+          <span>Power BI / SharePoint / Dataverse</span>
+        </article>
+        <article class="work-card reveal">
+          <p class="work-type">Compliance-aware delivery</p>
+          <h3>Usable app patterns inside federal constraints</h3>
+          <p>Supported iterative delivery, stakeholder demos, 508-aware interface decisions, and transition planning for government maintainers.</p>
+          <span>GCC / Teams / Microsoft 365</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell estimator-section" aria-labelledby="estimator-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Planning Tool</p>
+        <h2 id="estimator-title">Estimate the shape of an engagement.</h2>
+        <p>This is planning guidance, not a quote. It helps frame scope before a capture call or discovery session.</p>
+      </div>
+      <form class="estimator reveal" data-estimator>
+        <label>
+          Organization size
+          <select name="size">
+            <option value="small">Single team</option>
+            <option value="mid">Multiple offices</option>
+            <option value="large">Enterprise program</option>
+          </select>
+        </label>
+        <label>
+          Workflow complexity
+          <select name="complexity">
+            <option value="simple">Focused workflow</option>
+            <option value="moderate">Multi-role process</option>
+            <option value="complex">Cross-system modernization</option>
+          </select>
+        </label>
+        <label>
+          Environment
+          <select name="environment">
+            <option value="commercial">Commercial</option>
+            <option value="gcc">GCC</option>
+            <option value="gcchigh">GCC High</option>
+          </select>
+        </label>
+        <output class="estimate-output" data-estimate-output>
+          <span>Likely shape</span>
+          <strong>4 to 8 weeks</strong>
+          <small>Discovery, prototype, build increment, and transition notes with a lean delivery team.</small>
+        </output>
+      </form>
+    </section>
+
+    <section id="contact" class="section contact-band" aria-labelledby="contact-title">
+      <div class="shell contact-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Bring sharper Power Platform delivery into the capture conversation.</h2>
+          <p>Use the direct email below for teaming, capability statement requests, or early scope discussions.</p>
+        </div>
+        <div class="contact-card reveal">
+          <a class="contact-link" href="mailto:info@sitrepsystems.com">info@sitrepsystems.com</a>
+          <p>Formspree and LinkedIn can be added after endpoint and profile confirmation.</p>
+          <a class="button primary" href="mailto:info@sitrepsystems.com?subject=SitRep%20Systems%20Capability%20Statement">Request a Capability Statement</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      &copy; 2025 SitRep Systems. All rights reserved.
+  <footer class="site-footer">
+    <div class="shell footer-layout">
+      <span>&copy; 2026 SitRep Systems. All rights reserved.</span>
+      <a href="capability-statement.html">Capability Statement</a>
     </div>
   </footer>
+  <script src="assets/js/site.js?v=2" defer></script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+<svg width="520" height="150" viewBox="0 0 520 150" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">SitRep Systems logo for dark backgrounds</title>
+  <desc id="desc">SitRep Systems wordmark with a cyan 45-degree arrow mark inside a square frame.</desc>
+  <defs>
+    <linearGradient id="frameDark" x1="19" y1="26" x2="128" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0CE8FF"/>
+      <stop offset="0.5" stop-color="#0787B5"/>
+      <stop offset="1" stop-color="#05243C"/>
+    </linearGradient>
+    <linearGradient id="arrowDark" x1="43" y1="111" x2="117" y2="37" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F7FF"/>
+      <stop offset="0.58" stop-color="#13BFEF"/>
+      <stop offset="1" stop-color="#E9FEFF"/>
+    </linearGradient>
+    <filter id="glowDark" x="-28" y="-28" width="188" height="188" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0 0 0 0 0 0.9 0 0 0 0 1 0 0 0 0.74 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="520" height="150" fill="none"/>
+  <g fill="none">
+    <rect x="18" y="22" width="118" height="106" rx="4" stroke="url(#frameDark)" stroke-width="10" stroke-opacity="0.78"/>
+    <rect x="33" y="37" width="88" height="76" rx="2" stroke="#BDF8FF" stroke-opacity="0.16" stroke-width="1.5"/>
+    <g filter="url(#glowDark)">
+      <path d="M44 108L73 79L58 64H110V116L94 100L65 129H44V108Z" fill="url(#arrowDark)" fill-opacity="0.9" transform="translate(0 -17)"/>
+      <path d="M44 108L73 79L58 64H110" stroke="#E9FEFF" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter" transform="translate(0 -17)"/>
+      <path d="M65 129L94 100L110 116" stroke="#001C2F" stroke-opacity="0.62" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" transform="translate(0 -17)"/>
+    </g>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="165" y="74" fill="#10D9F2" font-size="54" font-weight="750" letter-spacing="-1" stroke="#001C2F" stroke-width="1">SitRep</text>
+    <text x="168" y="113" fill="#7CEEFF" fill-opacity="0.82" font-size="27" font-weight="600" letter-spacing="10">SYSTEMS</text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="520" height="150" viewBox="0 0 520 150" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">SitRep Systems logo concept 2</title>
+  <desc id="desc">Boxed 45-degree arrow with a notched technical tail and SitRep Systems wordmark.</desc>
+  <defs>
+    <linearGradient id="mark" x1="28" y1="124" x2="126" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#073653"/>
+      <stop offset="0.58" stop-color="#087FAC"/>
+      <stop offset="1" stop-color="#35E7F6"/>
+    </linearGradient>
+  </defs>
+  <rect x="28" y="24" width="102" height="102" rx="10" fill="none" stroke="url(#mark)" stroke-width="8"/>
+  <path d="M36 110L81 55L69 43H114V88L103 77L74 106H50V91L36 105V110Z" fill="url(#mark)"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="166" y="74" fill="currentColor" font-size="54" font-weight="740" letter-spacing="-1">SitRep</text>
+    <text x="169" y="113" fill="currentColor" fill-opacity="0.66" font-size="27" font-weight="650" letter-spacing="10">SYSTEMS</text>
+  </g>
+</svg>
