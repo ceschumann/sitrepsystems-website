@@ -1,0 +1,21 @@
+<svg width="520" height="150" viewBox="0 0 520 150" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">SitRep Systems logo concept 4</title>
+  <desc id="desc">Solid boxed arrow with cutout center and SitRep Systems wordmark.</desc>
+  <defs>
+    <linearGradient id="mark" x1="22" y1="124" x2="128" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05243C"/>
+      <stop offset="0.72" stop-color="#098AB4"/>
+      <stop offset="1" stop-color="#60F6FF"/>
+    </linearGradient>
+    <mask id="cut">
+      <rect width="520" height="150" fill="white"/>
+      <rect x="43" y="41" width="70" height="68" rx="2" fill="black"/>
+    </mask>
+  </defs>
+  <rect x="28" y="24" width="102" height="102" rx="6" fill="url(#mark)" mask="url(#cut)"/>
+  <path d="M50 87L82 55L70 43H116V89L105 78L74 109H50V87Z" fill="url(#mark)"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="166" y="74" fill="currentColor" font-size="54" font-weight="750" letter-spacing="-1">SitRep</text>
+    <text x="169" y="113" fill="currentColor" fill-opacity="0.66" font-size="27" font-weight="650" letter-spacing="10">SYSTEMS</text>
+  </g>
+</svg>

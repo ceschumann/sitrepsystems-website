@@ -1,0 +1,37 @@
+<svg width="520" height="150" viewBox="0 0 520 150" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">SitRep Systems logo for light backgrounds</title>
+  <desc id="desc">SitRep Systems wordmark with a 45-degree arrow mark inside a square frame.</desc>
+  <defs>
+    <linearGradient id="frameLight" x1="19" y1="26" x2="128" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#01D8FF"/>
+      <stop offset="0.48" stop-color="#0878A9"/>
+      <stop offset="1" stop-color="#063354"/>
+    </linearGradient>
+    <linearGradient id="arrowLight" x1="43" y1="111" x2="117" y2="37" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#042B46"/>
+      <stop offset="0.58" stop-color="#074C72"/>
+      <stop offset="1" stop-color="#0897C3"/>
+    </linearGradient>
+    <filter id="glowLight" x="-22" y="-22" width="176" height="176" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0 0 0 0 0 0.68 0 0 0 0 0.88 0 0 0 0.32 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none">
+    <rect x="18" y="22" width="118" height="106" rx="4" stroke="url(#frameLight)" stroke-width="10"/>
+    <rect x="33" y="37" width="88" height="76" rx="2" stroke="#0B3856" stroke-opacity="0.18" stroke-width="1.5"/>
+    <g filter="url(#glowLight)">
+      <path d="M44 108L73 79L58 64H110V116L94 100L65 129H44V108Z" fill="url(#arrowLight)" transform="translate(0 -17)"/>
+      <path d="M44 108L73 79L58 64H110" stroke="#24DDF5" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter" transform="translate(0 -17)"/>
+      <path d="M65 129L94 100L110 116" stroke="#001F35" stroke-opacity="0.28" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" transform="translate(0 -17)"/>
+    </g>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="165" y="74" fill="#062B49" font-size="54" font-weight="750" letter-spacing="-1">SitRep</text>
+    <text x="168" y="113" fill="#17607F" font-size="27" font-weight="600" letter-spacing="10">SYSTEMS</text>
+  </g>
+</svg>

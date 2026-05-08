@@ -1,0 +1,17 @@
+<svg width="520" height="150" viewBox="0 0 520 150" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">SitRep Systems logo concept 5</title>
+  <desc id="desc">Boxed arrow with split signal planes and SitRep Systems wordmark.</desc>
+  <defs>
+    <linearGradient id="mark" x1="30" y1="122" x2="126" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05283F"/>
+      <stop offset="0.52" stop-color="#078BB6"/>
+      <stop offset="1" stop-color="#26E9FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="28" y="24" width="102" height="102" rx="4" fill="none" stroke="url(#mark)" stroke-width="8"/>
+  <path d="M49 88L82 55L70 43H118V91L106 79L73 112H49V88Z" fill="url(#mark)"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="166" y="74" fill="currentColor" font-size="54" font-weight="750" letter-spacing="-1">SitRep</text>
+    <text x="169" y="113" fill="currentColor" fill-opacity="0.66" font-size="27" font-weight="650" letter-spacing="10">SYSTEMS</text>
+  </g>
+</svg>

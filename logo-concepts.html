@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Concepts | SitRep Systems</title>
+  <style>
+    :root {
+      --ink: #061927;
+      --cyan: #23d9f5;
+      --muted: #7d95a4;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #071421;
+      color: #eff8fb;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1;
+    }
+
+    p {
+      margin: 0;
+      color: #a8bdc9;
+      max-width: 760px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .concept {
+      border: 1px solid rgba(152, 240, 255, 0.18);
+      border-radius: 10px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .concept h2 {
+      margin: 0;
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(152, 240, 255, 0.18);
+      color: var(--cyan);
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .swatch {
+      min-height: 220px;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+
+    .swatch.light {
+      color: #062237;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(35, 217, 245, 0.2), transparent 22rem),
+        #f6fafb;
+    }
+
+    .swatch.dark {
+      color: #eafcff;
+      background:
+        radial-gradient(circle at 22% 22%, rgba(35, 217, 245, 0.2), transparent 22rem),
+        #061927;
+    }
+
+    img {
+      width: min(520px, 100%);
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 760px) {
+      .swatches {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Logo Concepts</h1>
+    <p>Five boxed-arrow directions for SitRep Systems. Each mark is shown on light and dark backgrounds using the same SVG, with the wordmark inheriting the surrounding text color.</p>
+
+    <div class="grid">
+      <section class="concept">
+        <h2>Concept 01: Square Frame</h2>
+        <div class="swatches">
+          <div class="swatch light"><img src="assets/img/logo-concept-01.svg" alt="SitRep Systems logo concept 1 on a light background"></div>
+          <div class="swatch dark"><img src="assets/img/logo-concept-01.svg" alt="SitRep Systems logo concept 1 on a dark background"></div>
+        </div>
+      </section>
+
+      <section class="concept">
+        <h2>Concept 02: Soft Frame</h2>
+        <div class="swatches">
+          <div class="swatch light"><img src="assets/img/logo-concept-02.svg" alt="SitRep Systems logo concept 2 on a light background"></div>
+          <div class="swatch dark"><img src="assets/img/logo-concept-02.svg" alt="SitRep Systems logo concept 2 on a dark background"></div>
+        </div>
+      </section>
+
+      <section class="concept">
+        <h2>Concept 03: Light Frame</h2>
+        <div class="swatches">
+          <div class="swatch light"><img src="assets/img/logo-concept-03.svg" alt="SitRep Systems logo concept 3 on a light background"></div>
+          <div class="swatch dark"><img src="assets/img/logo-concept-03.svg" alt="SitRep Systems logo concept 3 on a dark background"></div>
+        </div>
+      </section>
+
+      <section class="concept">
+        <h2>Concept 04: Filled Frame</h2>
+        <div class="swatches">
+          <div class="swatch light"><img src="assets/img/logo-concept-04.svg" alt="SitRep Systems logo concept 4 on a light background"></div>
+          <div class="swatch dark"><img src="assets/img/logo-concept-04.svg" alt="SitRep Systems logo concept 4 on a dark background"></div>
+        </div>
+      </section>
+
+      <section class="concept">
+        <h2>Concept 05: Wide Arrow</h2>
+        <div class="swatches">
+          <div class="swatch light"><img src="assets/img/logo-concept-05.svg" alt="SitRep Systems logo concept 5 on a light background"></div>
+          <div class="swatch dark"><img src="assets/img/logo-concept-05.svg" alt="SitRep Systems logo concept 5 on a dark background"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
